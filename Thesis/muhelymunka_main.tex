@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+
+\input{packages}
+\input{constants}
+
+\partfont{\fontsize{12}{15}\selectfont}
+
+
+\renewcommand{\contentsname}{Tartalom}
+ \addbibresource{references.bib} %opening 
+
+ 
+\begin{document}
+\input{pages/cover}
+
+\includepdf[pages=-,offset=0 -25]{pages/eredetisegnyilatkozat_szakdolgozat}
+
+\pagebreak
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+\pagebreak
+\justify
+\newrefsection
+\part{Szociálpszichológia műhelymunka}
+\begin{large}
+	\Large A baráti kapcsolatok hatása a  homoszexualitással kapcsolatos attitűdökre és viselkedésre
+\end{large}
+\input{pages/main_content}
+\printbibliography[title={Hivatkoz\'asok}]
+\pagebreak
+\part{Oktatói értékelés}
+\begin{large}
+	\large Vélemény Bagaméri Fanni Gabriella „A baráti kapcsolatok hatása a homoszexualitással kapcsolatos attitűdökre és viselkedésre” című műhelymunkájáról
+\end{large}
+\input{pages/oktatoi_ertelekes.tex}
+\changelocaltocdepth{0}
+\newrefsection
+\pagebreak
+\part{Általános pszichológia műhelymunka}
+\begin{large}
+	\Large A zeneterápia hatása autista gyerekek szociális képességeire
+\end{large}
+\input{pages/altalanos_content.tex}
+\printbibliography[title={Hivatkoz\'asok}]
+\newrefsection
+\pagebreak
+\part{Fejlődés-lélektan műhelymunka}
+\begin{large}
+	\Large A nyelv szerepe halláskárosult gyermekek tudatelméletének fejlődésében
+\end{large}
+\input{pages/fejlodes_content.tex}
+\printbibliography[title={Hivatkoz\'asok}]
+\newrefsection
+\pagebreak
+\part{Személyiségpszichológia műhelymunka}
+\begin{large}
+	\Large Boldogság-averzió, félelem a boldogságtól
+\end{large}
+\input{pages/szemelyiseg_content.tex}
+\printbibliography[title={Hivatkoz\'asok}]
+\newrefsection
+\pagebreak
+\part{Szakmai önreflexió}
+\pagebreak
+\part{Prezentáció}
+\pagebreak
+\footnotesize
+\section{Hivatkoz\'asok}
+\end{document}
