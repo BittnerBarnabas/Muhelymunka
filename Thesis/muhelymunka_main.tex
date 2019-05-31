@@ -5,7 +5,6 @@
 
 \partfont{\fontsize{12}{15}\selectfont}
 
-
 \renewcommand{\contentsname}{Tartalom}
  \addbibresource{references.bib} %opening 
 
@@ -31,7 +30,7 @@
 \pagebreak
 \part{Oktatói értékelés}
 \begin{large}
-	\large Vélemény Bagaméri Fanni Gabriella „A baráti kapcsolatok hatása a homoszexualitással kapcsolatos attitűdökre és viselkedésre” című műhelymunkájáról
+	\large Vélemény Bagaméri Fanni \textit{„A baráti kapcsolatok hatása a homoszexualitással kapcsolatos attitűdökre és viselkedésre”} című műhelymunkájáról
 \end{large}
 \input{pages/oktatoi_ertelekes.tex}
 \changelocaltocdepth{1}
@@ -64,7 +63,8 @@
 \part{Szakmai önreflexió}
 \input{pages/onreflexio_content.tex}
 \pagebreak
-\part{Prezentáció}
-\pagebreak
+
+\includepdf[pages=1-2,nup=1x2,offset=0 -50,delta=0 25, scale=0.65, pagecommand={\part{Prezentáció}}]{pages/thesis_pres}
+\includepdf[pages=3-,nup=1x2,offset=0 0,delta=0 25, scale=0.65, pagecommand={}]{pages/thesis_pres}
 \footnotesize
 \end{document}
